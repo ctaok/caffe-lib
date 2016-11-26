@@ -1,0 +1,7 @@
+8.2 安装openblas
+	wget http://sourceforge.net/projects/slurm-roll/files/addons/6.1.1/rpms/pb-binutils224-2.24-1.x86_64.rpm
+	sudo yum localinstall pb-binutils224-2.24-1.x86_64.rpm
+	git clone https://github.com/xianyi/OpenBLAS.git
+	cd OpenBLAS
+	make
+	sudo make install
