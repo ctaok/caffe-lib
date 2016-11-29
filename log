@@ -1,0 +1,28 @@
+yum -y install blas.x86_64
+yum -y install blas-devel.x86_64
+yum -y install atlas.x86_64 atlas-devel.x86_64 atlas-sse3.x86_64 atlas-sse3-devel.x86_64
+yum localinstall pb-binutils224-2.24-1.x86_64.rpm
+yum install boost-devel
+yum install opencv-devel
+yum -y install freeglut
+yum install atlas-devel
+yum install snappy-devel
+yum install glog-devel
+yum install gflags-devel
+yum install protobuf-devel
+yum install leveldb-devel
+yum install hdf5-devel
+yum install lmdb-devel
+
+
+yum -y install python-pip
+pip install cython
+pip install easydict
+pip install -U scikit-image
+yum -y install epel-release
+yum -y install python-pip
+yum install opencv-python.x86_64
+yum install skimage.io
+yum install numpy
+yum install scipy
+
