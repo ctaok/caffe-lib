@@ -1,0 +1,34 @@
+unzip protobuf-2.5.0
+
+cd protobuf-2.5.0
+
+chmod 777 configure
+
+./configure
+
+make -j4
+
+make check -j4
+
+make install 
+
+
+
+make install 完貌似有报错，我主要用python接口这个就没管
+
+
+
+接下来编译python接口的（不需要python接口的请跳过）
+
+cd ./python 
+python setup.py build 
+python setup.py test 
+python setup.py install
+
+
+验证使用命令 protoc -version
+这步我还没有得到结果。
+
+可是在python 下使用 
+>>import google.protobuf
+没有报错，那就是能用了。
